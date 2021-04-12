@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paying Guest Accomodation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-container">
+        <h1>Roomer</h1>
+        <h2>A Paying Guest Accomodation Site</h2>
+        <br>
+        <h2>IWT Term Project </h2>
+        <h2>Jayesh Kusuma IT 18118027</h2>
+    </div>
+
+    <div class="middle-container">
+        <br>
+        <h3 class="heading">Rooms available near your location </h3>
+    </div>
+    <div class=filter>
+        <h3 class="heading2">Filter</h3>
+        <div class="dropdown">
+            <button class="dropbtn">Beds</button>
+            <div class="dropdown-content">
+            <p id="allbed" href="#" onclick="beds(0)">All</p>  
+            <p id="1bed" href="#" onclick="beds(1)">1</p>
+            <p id="2bed" href="#" onclick="beds(2)">2</p>
+            <p id="3bed" href="#" onclick="beds(3)">3</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Price</button>
+            <div class="dropdown-content">
+            <p onclick="price(0)" style="text-align: center;">All</p> 
+            <p onclick="price(1)" >Under 10000</p>
+            <p onclick="price(2)" >10000 to 15000</p>
+            <p onclick="price(3)" >15001 and above</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="grid">
+        <div class="card filter1 beds2">
+            <img src="images/1.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 5000</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter1 beds3">
+            <img src="images/2.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 5500</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter1 beds1">
+            <img src="images/3.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 6000</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter1 beds2">
+            <img src="images/4.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 6500</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter1 beds2">
+            <img src="images/5.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 7000</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter1 beds1">
+            <img src="images/6.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 7500</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter1 beds3">
+            <img src="images/7.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 8000</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter1 beds3">
+            <img src="images/8.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 8500</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter1 beds2">
+            <img src="images/1.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 9000</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter1 beds3">
+            <img src="images/2.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 9500</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter2 beds1">
+            <img src="images/3.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 10000</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter2 beds2">
+            <img src="images/4.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 10500</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter2 beds2">
+            <img src="images/5.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 11000</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter2 beds1">
+            <img src="images/6.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 11500</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter2 beds3">
+            <img src="images/7.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 12000</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter2 beds3">
+            <img src="images/8.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 12500</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter2 beds2">
+            <img src="images/1.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 13000</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter2 beds3">
+            <img src="images/2.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 13500</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter2 beds1">
+            <img src="images/3.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 14000</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter2 beds2">
+            <img src="images/4.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 14500</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter2 beds2">
+            <img src="images/5.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 15000</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter3 beds1">
+            <img src="images/6.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 15500</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter3 beds3">
+            <img src="images/7.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 16000</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div class="card filter3 beds3">
+            <img src="images/8.1.jpg" alt="No image found" />
+            <div class="container">
+                <h3>Rs 16500</h3>
+                <p>Location: near NIT Raipur </p>
+                <button type="button"><a class="button" href="#popup1">View Details</a></button>
+            </div>
+        </div>
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Room Details</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <p><h3>Name of Owner</h3> Jayesh Kusuma</p>
+                    <p><h3>Phone</h3> +91 1234567789</p>
+                    <p><h3>Address</h3> Near Nit Raipur, Raipur, Chhatisgarh</p>
+                    <p><h3>Facilities</h3> 24 hrs water, Single Bathroom, Wifi Connection available</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
